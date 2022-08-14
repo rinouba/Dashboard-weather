@@ -9,7 +9,7 @@
 /* nav bar */
 .nav-bar-top{
     background-image: linear-gradient(to right,#8c7ce0, #d04f95);
-    height: 160px;
+    height: 100px;
     border-radius: 0px 0px 20px 20px;
 }
 p{
@@ -17,19 +17,24 @@ p{
 }
 
 .div-nav-1{
-    margin: 45px 0px 0px 60px;
+    margin: 15px 0px 0px 60px;
 }
 
 .img-profile{
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
+    margin-top: 8px;
 }
 
 .div-nav-2{
     float: right;
-    margin: 50px 50px 0px 0px;
+    margin: 30px 30px 0px 0px;
 }
 
+.img-right-item2{
+    width: 50%;
+    height: 50%;
+}
 .div-nav-2 a {
     margin-right: 2cm;
     font-size: 28px;
@@ -41,10 +46,11 @@ a{
 .Hide-Button{
     position: absolute;
     right: 50px;
-    top: 40px;
+    top: 15px;
     font-size: 50px;
     cursor: pointer;
     transition: all 0.3s;
+    display: block;
 }
 
 .Hide-Button:active{
@@ -53,6 +59,7 @@ a{
 
 .text-p{
     color: #9ba6c4;
+    font-size: 15px;
 }
 .div-hide{
     z-index: -1;
@@ -60,7 +67,7 @@ a{
     background-image: linear-gradient(to right,#8c7ce0, #d04f95);
     left: 72%;
     bottom: 0;
-    top: 15%;
+    top: 0;
     right: 0;
     transition: all 0.2s;
 }
@@ -68,13 +75,6 @@ a{
 .div-hide-active{
     transform: scale(0);
 }
-
-
-@media only screen and (min-width: 1450px) {
-    .Hide-Button{
-        display: none !important;
-    }
-  }
 
 
 /*  Grid System*/
@@ -103,38 +103,36 @@ a{
 }
 
 .row-of-left{
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 .icon-col{
-    font-size: 100px;
+    font-size: 60px;
 }
 /* item 3 */
 .item3{
     border-radius: 20px;
     background-image: linear-gradient(to right, #3f4464 ,#2c334b );
-    padding: 20px;
     width: 90%;   
-    margin: 50px 50px 0px 10px;
+    margin: 50px 10px 0px 10px;
 }
 /* item4 */
 
 .item4{
     border-radius: 20px;
-    padding: 10px;
-    width: 90%;   
-    margin: 0px 50px 0px 10px;
+    width: 90%;
+    margin: 50px 0px 0px 0px;
 }
 
 .icon-img-bottem-right{
-    font-size: 150px;
+    font-size: 90px;
 }
 
 .div-locked{
     position: relative;
     border-radius: 60px;
-    width: 55%;
-    height: 50px;
+    width: 50%;
+    height: 35px;
     background-image: linear-gradient(to right,#8c7ce0, #d04f95);
     margin: auto;
     border: 1px solid #414767;
@@ -143,16 +141,18 @@ a{
 .bottem-right-article{
     background-image: linear-gradient(140deg, #3f4464 ,#2c334b );
     border-radius: 20px;
+    height: 45vh;
 }
 
 .bottem-left-article{
     background-image: linear-gradient(140deg, #3f4464 ,#2c334b );
     border-radius: 20px;
+    height: 45vh;
 }
 
 .center{
     height: 10px;
-    width: 250px;
+    width: 60%;
     background-image: linear-gradient(140deg,#8c7ce0 , #d04f95 );
     display: inline-block;
     border-radius: 13px;
@@ -161,12 +161,13 @@ a{
 
 .item5{
     width: 90%;
-    margin: 50px 10px 0px 50px;
+    margin: 50px 0px 0px 50px;
 }
 .icon{
-    height: 250px;
+    height: 200px;
     border-radius: 20px;
-    margin: 10px;
+    margin: 5px;
+    width: 25%;
 }
 .icons-color{
     background-image: linear-gradient(140deg,#8c7ce0 , #d04f95 );
@@ -175,5 +176,96 @@ a{
     background-image: linear-gradient(140deg, #3f4464 ,#2c334b );
 }
 .icon-img{
-    font-size: 90px;
+    font-size: 50px;
 }
+
+@media screen and (max-width: 1200px) {
+    *{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .grid-container{
+        display: block;
+    }
+    .item2{
+        margin-top: 50px;
+    }
+    .item3{
+        margin: 50px 0px 0px 50px;
+    }
+    .item4{
+        margin: 50px 0px 0px 50px;
+    }
+    .mt-imgs{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    *{
+        font-size: 10px;
+    }
+    .item2{
+        margin: auto;
+    }
+    .item3{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .item4{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .item5{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 467px) {
+    .item2{
+        margin: auto;
+    }
+    .item3{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .item4{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .item5{
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .Hide-Button{
+        display: none !important;
+    }
+    /* .div-nav-2{
+        display: block;
+    } */
+  }
+  /* @media only screen and (max-width: 1200px) {
+    .Hide-Button{
+        display: block !important;
+    }
+    .div-nav-2{
+        display: none;
+    }
+  } */
+
+  .div-hides{
+    z-index: 5;
+    position: static;
+    top: 10;
+    left: 50%;
+    right: 60%;
+    background-color: #d04f95;
+    border-radius: 13px;
+    text-align: center;
+    padding: 20px;
+    display: none;
+  }
