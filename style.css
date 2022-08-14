@@ -87,11 +87,9 @@ a{
 .grid-container {
   display: grid;
   grid-template-areas:
-    'menu menu menu main main main'
-    'left left left right right right';
-    gap:0px; /*for space bettwin them*/
+    'menu main'
+    'left right';
 }
-
 /*  Grid System*/
 
 /* item2 */
@@ -99,8 +97,8 @@ a{
 .item2{
     border-radius: 20px;
     background-image: linear-gradient(to right, #3f4464 ,#2c334b );
-    padding: 40px;
-    width: 900px;
+    padding: 25px;
+    width: 90%;
     margin: 50px 10px 0px 50px;
 }
 
@@ -115,16 +113,16 @@ a{
 .item3{
     border-radius: 20px;
     background-image: linear-gradient(to right, #3f4464 ,#2c334b );
-    padding: 40px;
-    width: 900px;   
+    padding: 20px;
+    width: 90%;   
     margin: 50px 50px 0px 10px;
 }
 /* item4 */
 
 .item4{
     border-radius: 20px;
-    padding: 40px;
-    width: 900px;   
+    padding: 10px;
+    width: 90%;   
     margin: 0px 50px 0px 10px;
 }
 
@@ -150,7 +148,6 @@ a{
 .bottem-left-article{
     background-image: linear-gradient(140deg, #3f4464 ,#2c334b );
     border-radius: 20px;
-    margin-right: 50px;
 }
 
 .center{
@@ -163,7 +160,7 @@ a{
 /* item5 */
 
 .item5{
-    width: 900px;
+    width: 90%;
     margin: 50px 10px 0px 50px;
 }
 .icon{
